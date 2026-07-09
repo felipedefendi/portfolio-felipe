@@ -56,7 +56,7 @@ export function Projects() {
                 ))}
               </ul>
 
-              <div className="mt-5 flex items-center gap-4 border-t border-border pt-4 text-sm">
+              <div className="mt-5 flex flex-wrap items-center gap-4 border-t border-border pt-4 text-sm">
                 {project.liveUrl ? (
                   <a
                     href={project.liveUrl}
@@ -79,7 +79,19 @@ export function Projects() {
                     {t.projects.viewCode}
                   </a>
                 ) : null}
-                {!project.liveUrl && !project.repoUrl ? (
+                {project.repos?.map((repo) => (
+                  <a
+                    key={repo.url}
+                    href={repo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 font-medium text-foreground transition-colors hover:text-accent"
+                  >
+                    <GitHubIcon className="h-4 w-4" />
+                    {repo.label}
+                  </a>
+                ))}
+                {!project.liveUrl && !project.repoUrl && !project.repos?.length ? (
                   <span className="text-xs text-muted-foreground">
                     {t.projects.comingSoon}
                   </span>

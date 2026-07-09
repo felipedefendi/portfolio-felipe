@@ -13,6 +13,7 @@ export type Project = {
   status: ProjectStatus;
   tags: string[];
   repoUrl?: string;
+  repos?: { label: string; url: string }[];
   liveUrl?: string;
   content: Record<Locale, ProjectContent>;
 };
@@ -36,6 +37,31 @@ export const projects: Project[] = [
         tagline: "A Brazilian football league statistics dashboard.",
         description:
           "A full-stack app that integrates the football-data.org API to show standings, recent form and team performance for Brazil's top league, with interactive charts. Real data is cached in PostgreSQL via Prisma, and a deterministic demo mode ensures the app never goes down due to an API failure.",
+      },
+    },
+  },
+  {
+    slug: "templates-sites-institucionais",
+    status: "in-progress",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    repos: [
+      { label: "Essencial", url: "https://github.com/felipedefendi/site-essencial" },
+      { label: "Profissional", url: "https://github.com/felipedefendi/site-profissional" },
+      { label: "Conversão", url: "https://github.com/felipedefendi/site-conversao" },
+      { label: "Premium", url: "https://github.com/felipedefendi/site-premium" },
+    ],
+    content: {
+      pt: {
+        title: "Templates de Sites Institucionais",
+        tagline: "Linha de templates para venda a pequenos negócios locais.",
+        description:
+          "Quatro templates Next.js prontos para reuso comercial (Essencial, Profissional, Conversão e Premium), cada um com um nível de complexidade — de uma página institucional simples até um site com blog, SEO avançado e captação de leads em etapas. Cada projeto centraliza os dados do cliente em um único arquivo de configuração, permitindo aplicar o mesmo template a um novo negócio em minutos.",
+      },
+      en: {
+        title: "Local Business Website Templates",
+        tagline: "A line of templates for selling websites to small local businesses.",
+        description:
+          "Four ready-to-reuse Next.js templates (Essential, Professional, Conversion and Premium), each at a different complexity tier — from a simple one-page site to a full site with a blog, advanced SEO and multi-step lead capture. Each project centralizes client data in a single config file, so the same template can be applied to a new business in minutes.",
       },
     },
   },
