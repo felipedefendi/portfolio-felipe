@@ -19,21 +19,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "painel-futebol",
-    status: "planned",
-    tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind", "Recharts", "REST APIs"],
+    slug: "futscorestats",
+    status: "live",
+    tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Tailwind", "Recharts", "Zod", "Jest"],
+    repoUrl: "https://github.com/felipedefendi/futscorestats",
+    liveUrl: "https://futscorestats.vercel.app",
     content: {
       pt: {
-        title: "Painel de Estatísticas de Futebol",
-        tagline: "Dashboard de desempenho de times e jogadores.",
+        title: "FutScoreStats",
+        tagline: "Painel de estatísticas do Campeonato Brasileiro.",
         description:
-          "Aplicação full-stack que consome uma API pública de futebol para exibir classificações, forma recente dos times, estatísticas de jogadores e comparativos — com gráficos interativos, cache local dos dados e um modo demo resiliente a falhas de API.",
+          "Aplicação full-stack que integra a API football-data.org para exibir classificação, forma recente e desempenho dos times do Brasileirão, com gráficos interativos. Os dados reais são armazenados em PostgreSQL como camada de cache (via Prisma), e um modo demonstração determinístico garante que o app nunca fique fora do ar por falha da API.",
       },
       en: {
-        title: "Football Statistics Dashboard",
-        tagline: "A team and player performance dashboard.",
+        title: "FutScoreStats",
+        tagline: "A Brazilian football league statistics dashboard.",
         description:
-          "A full-stack app that consumes a public football API to show standings, recent team form, player statistics and comparisons — with interactive charts, local data caching and a demo mode resilient to API failures.",
+          "A full-stack app that integrates the football-data.org API to show standings, recent form and team performance for Brazil's top league, with interactive charts. Real data is cached in PostgreSQL via Prisma, and a deterministic demo mode ensures the app never goes down due to an API failure.",
       },
     },
   },
