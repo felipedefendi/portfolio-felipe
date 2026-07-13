@@ -66,6 +66,25 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "faxina",
+    status: "in-progress",
+    tags: ["Flutter", "Dart", "UI/UX", "Arquitetura Modular"],
+    content: {
+      pt: {
+        title: "Faxina!",
+        tagline: "App que conecta prestadoras de serviços domésticos diretamente ao cliente.",
+        description:
+          "Aplicativo mobile que conecta prestadoras de serviços domésticos diretamente aos clientes, sem intermediários. Atuei principalmente na estruturação do mockup, das regras de negócio e do fluxo do produto, no desenho da interface e no desenvolvimento do Front-end em Flutter, usando uma arquitetura modular voltada a um melhor desempenho do app.",
+      },
+      en: {
+        title: "Faxina!",
+        tagline: "An app connecting home cleaning service providers directly to clients.",
+        description:
+          "A mobile app that connects home cleaning service providers directly to clients, with no intermediaries. I was mainly responsible for structuring the mockups, business rules and product flow, the interface design, and the Flutter front-end development, using a modular architecture aimed at better app performance.",
+      },
+    },
+  },
+  {
     slug: "fieldcore-api",
     status: "live",
     tags: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Docker", "Swagger", "Jest"],
