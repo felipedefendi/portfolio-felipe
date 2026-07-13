@@ -69,6 +69,7 @@ export const projects: Project[] = [
     slug: "faxina",
     status: "in-progress",
     tags: ["Flutter", "Dart", "UI/UX", "Arquitetura Modular"],
+    repoUrl: "https://github.com/felipedefendi/faxina-front",
     content: {
       pt: {
         title: "Faxina!",
