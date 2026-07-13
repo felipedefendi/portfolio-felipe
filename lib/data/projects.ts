@@ -69,6 +69,7 @@ export const projects: Project[] = [
     slug: "fieldcore-api",
     status: "in-progress",
     tags: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Docker", "Swagger", "Jest"],
+    repoUrl: "https://github.com/felipedefendi/fieldcore-api",
     content: {
       pt: {
         title: "FieldCore API",
