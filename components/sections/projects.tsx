@@ -4,36 +4,30 @@ import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { Section } from "@/components/section";
 import { GitHubIcon } from "@/components/icons";
-import { projects, type ProjectStatus } from "@/lib/data/projects";
-
-const statusDot: Record<ProjectStatus, string> = {
-  live: "bg-emerald-500",
-  "in-progress": "bg-amber-500",
-  planned: "bg-muted-foreground",
-};
+import { projects } from "@/lib/data/projects";
 
 export function Projects() {
   const { t, locale } = useLanguage();
+  const visibleProjects = projects.filter((project) => project.status !== "planned");
 
   return (
     <Section id="projects" title={t.projects.title} subtitle={t.projects.subtitle}>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => {
+        {visibleProjects.map((project) => {
           const c = project.content[locale];
           return (
             <article
               key={project.slug}
               className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent/60"
             >
-              <div className="mb-3 flex items-center justify-between">
-                <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
-                  <span
-                    className={`h-2 w-2 rounded-full ${statusDot[project.status]}`}
-                    aria-hidden
-                  />
-                  {t.projects.status[project.status]}
-                </span>
-              </div>
+              {project.status === "live" ? (
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500" aria-hidden />
+                    {t.projects.status.live}
+                  </span>
+                </div>
+              ) : null}
 
               <h3 className="text-lg font-semibold text-foreground">
                 {c.title}
