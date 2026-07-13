@@ -18,6 +18,7 @@ export const skillTiers: { id: SkillTierId; items: string[] }[] = [
       "Prisma",
       "Git",
       "Docker",
+      "Claude Code",
     ],
   },
   {

@@ -135,7 +135,7 @@ export const dictionaries = {
       backToSite: "Voltar ao site",
       summaryLabel: "Resumo profissional",
       summary:
-        "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 4 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos ao ecossistema moderno JavaScript/TypeScript (React, Next.js, Node, Nest). Inglês fluente, foco em código limpo, testável e confiável.",
+        "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 4 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos ao ecossistema moderno JavaScript/TypeScript (React, Next.js, Node, Nest). Experiência prática em desenvolvimento full-stack assistido por IA — principalmente com Claude Code —, conduzindo planejamento de arquitetura, backend, banco de dados, testes automatizados e deploy em produção de múltiplos projetos. Inglês fluente, foco em código limpo, testável e confiável.",
       contactLabel: "Contato",
       projectsLabel: "Projetos",
     },
@@ -289,7 +289,7 @@ export const dictionaries = {
       backToSite: "Back to site",
       summaryLabel: "Professional summary",
       summary:
-        "Full-Stack Developer and Software Engineer with 4+ years in tech, combining a strong foundation in databases and enterprise systems with the modern JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest). Fluent in English, focused on clean, testable and reliable code.",
+        "Full-Stack Developer and Software Engineer with 4+ years in tech, combining a strong foundation in databases and enterprise systems with the modern JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest). Hands-on experience with AI-assisted full-stack development — primarily with Claude Code — leading architecture planning, backend, database design, automated testing and production deployment across multiple projects. Fluent in English, focused on clean, testable and reliable code.",
       contactLabel: "Contact",
       projectsLabel: "Projects",
     },
