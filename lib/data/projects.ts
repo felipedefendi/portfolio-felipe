@@ -66,21 +66,21 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "api-gestao",
-    status: "planned",
-    tags: ["NestJS", "PostgreSQL", "Prisma", "JWT", "Docker", "Swagger", "Jest"],
+    slug: "fieldcore-api",
+    status: "in-progress",
+    tags: ["NestJS", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Docker", "Swagger", "Jest"],
     content: {
       pt: {
-        title: "API de Gestão (RESTful)",
-        tagline: "API robusta com autenticação, testes e documentação.",
+        title: "FieldCore API",
+        tagline: "API multi-tenant de gestão de ordens de serviço e manutenção.",
         description:
-          "API RESTful para gestão de recursos empresariais, com autenticação JWT, banco relacional, documentação interativa (Swagger/OpenAPI) e testes automatizados — empacotada com Docker e seguindo boas práticas (SOLID, DTOs, validação).",
+          "API RESTful para empresas de manutenção/assistência técnica gerenciarem clientes, equipamentos e ordens de serviço, com isolamento real entre empresas (multi-tenant), RBAC por papel, JWT com access e refresh token rotacionado, e uma máquina de estados para o ciclo de vida da ordem de serviço. Documentada em Swagger, com Docker Compose e testes automatizados.",
       },
       en: {
-        title: "Management API (RESTful)",
-        tagline: "A robust API with authentication, tests and documentation.",
+        title: "FieldCore API",
+        tagline: "A multi-tenant work order and maintenance management API.",
         description:
-          "A RESTful API for managing business resources, featuring JWT authentication, a relational database, interactive documentation (Swagger/OpenAPI) and automated tests — containerized with Docker and following best practices (SOLID, DTOs, validation).",
+          "A RESTful API for field service companies to manage customers, equipment and work orders, with real multi-tenant isolation, role-based access control, JWT with rotating refresh tokens, and a state machine for the work order lifecycle. Documented with Swagger, containerized with Docker Compose, and automated tests.",
       },
     },
   },

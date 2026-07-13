@@ -5,9 +5,11 @@ import { ArrowLeft, FileDown } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { skillTiers } from "@/lib/data/skills";
 import { contactInfo } from "@/lib/data/contact";
+import { projects } from "@/lib/data/projects";
 
 export default function CvPage() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const cvProjects = projects.filter((p) => p.status !== "planned");
 
   return (
     <div className="bg-background py-8 print:bg-white print:py-0">
@@ -96,6 +98,41 @@ export default function CvPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </Block>
+
+        {/* Projetos */}
+        <Block title={t.cv.projectsLabel}>
+          <div className="space-y-3">
+            {cvProjects.map((project) => {
+              const content = project.content[locale];
+              const link = project.liveUrl ?? project.repoUrl;
+
+              return (
+                <div key={project.slug}>
+                  <div className="flex items-baseline justify-between gap-4">
+                    <h3 className="text-sm font-semibold text-foreground">
+                      {link ? (
+                        <a
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          {content.title}
+                        </a>
+                      ) : (
+                        content.title
+                      )}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">{content.tagline}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    {project.tags.join(" · ")}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </Block>
 

@@ -137,6 +137,7 @@ export const dictionaries = {
       summary:
         "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 4 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos ao ecossistema moderno JavaScript/TypeScript (React, Next.js, Node, Nest). Inglês fluente, foco em código limpo, testável e confiável.",
       contactLabel: "Contato",
+      projectsLabel: "Projetos",
     },
     notFound: {
       title: "Página não encontrada",
@@ -290,6 +291,7 @@ export const dictionaries = {
       summary:
         "Full-Stack Developer and Software Engineer with 4+ years in tech, combining a strong foundation in databases and enterprise systems with the modern JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest). Fluent in English, focused on clean, testable and reliable code.",
       contactLabel: "Contact",
+      projectsLabel: "Projects",
     },
     notFound: {
       title: "Page not found",
