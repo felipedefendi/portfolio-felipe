@@ -107,6 +107,26 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "softdesk-hcm-bot",
+    status: "live",
+    tags: ["Node.js", "TypeScript", "Playwright", "Express", "Systemd", "Nginx", "Oracle Cloud"],
+    repoUrl: "https://github.com/felipedefendi/softdesk-hcm-bot",
+    content: {
+      pt: {
+        title: "SoftDesk HCM Bot",
+        tagline: "Automação de rodízio de chamados de suporte com monitoramento de SLA.",
+        description:
+          "Automação que monitora a fila de chamados sem atendente de um sistema de suporte e, quando o SLA de encaminhamento é ultrapassado, atribui automaticamente ao próximo atendente de uma equipe em rodízio, notificando o time via Microsoft Teams. Inclui um dashboard web para gerenciar quem está ativo no rodízio. Implantado em produção numa VM na Oracle Cloud, com systemd, nginx e HTTPS.",
+      },
+      en: {
+        title: "SoftDesk HCM Bot",
+        tagline: "Support ticket round-robin automation with SLA monitoring.",
+        description:
+          "An automation that monitors an unassigned-ticket queue in a support system and, once the routing SLA is exceeded, automatically assigns the ticket to the next agent in a team rotation, notifying the team via Microsoft Teams. Includes a web dashboard to manage who's active in the rotation. Deployed to production on an Oracle Cloud VM with systemd, nginx and HTTPS.",
+      },
+    },
+  },
+  {
     slug: "assistente-ia",
     status: "planned",
     tags: ["Next.js", "TypeScript", "IA / Claude API", "Tailwind"],
