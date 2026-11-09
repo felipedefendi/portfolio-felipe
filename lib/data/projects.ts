@@ -55,6 +55,7 @@ export const projects: Project[] = [
     slug: "motor-edicao-video",
     status: "live",
     tags: ["Python", "FFmpeg", "OpenCV", "Whisper", "Demucs", "Hyperframes MCP", "SQLite", "Claude Code", "Codex", "Agentes de IA"],
+    repoUrl: "https://github.com/felipedefendi/motor-edicao-video",
     content: {
       pt: {
         title: "Motor de Edição de Vídeo + Estúdio Criativo",
