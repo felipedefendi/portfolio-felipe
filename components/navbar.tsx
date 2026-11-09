@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Menu, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { ThemeToggle } from "./theme-toggle";
@@ -22,10 +23,9 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur print:hidden">
       <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2" aria-label="Início">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-sm font-bold text-white">
-            FD
-          </span>
+        <Link href="/" className="flex items-center gap-2.5" aria-label="Início">
+          <Image src="/logo.png" alt="" width={36} height={36} priority className="h-9 w-9" />
+          <span className="text-sm font-semibold tracking-tight">Felipe Defendi</span>
         </Link>
 
         <ul className="hidden items-center gap-6 md:flex">

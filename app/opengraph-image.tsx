@@ -1,10 +1,15 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt = "Felipe Defendi — Full-Stack Developer";
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const logo = await readFile(join(process.cwd(), "public", "logo-og.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -19,21 +24,8 @@ export default function OpengraphImage() {
           color: "#ffffff",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 84,
-            height: 84,
-            borderRadius: 18,
-            background: "linear-gradient(135deg, #6366f1, #22d3ee)",
-            fontSize: 40,
-            fontWeight: 700,
-          }}
-        >
-          FD
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logoSrc} alt="" width={110} height={110} style={{ width: 110, height: 110 }} />
         <div
           style={{
             display: "flex",
