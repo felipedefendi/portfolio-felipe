@@ -23,7 +23,7 @@ export const dictionaries = {
       title: "Sobre mim",
       paragraphs: [
         "Sou Engenheiro de Software formado, com mais de 4 anos atuando em tecnologia — do suporte técnico à consultoria em sistemas corporativos. Essa trajetória me deu algo que raramente se aprende só programando: entender o problema do negócio antes de escrever a primeira linha de código.",
-        "Hoje atuo como Consultor HCM na Senior Norte PR, canal da Senior Sistemas, onde lido diariamente com SQL avançado, regras LSP, integrações e manutenção de bancos de dados de grandes empresas — e onde criei, por conta própria, a automação de rodízio de chamados e o painel de gestão que o time de suporte usa em produção. Como desenvolvedor, uno essa base de dados ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest), a Python para automação e processamento de mídia, e a agentes de IA construídos sobre APIs de LLM.",
+        "Hoje atuo no Suporte Técnico HCM da Senior Norte PR, canal da Senior Sistemas, onde lido diariamente com SQL avançado, regras LSP, integrações e manutenção de bancos de dados de grandes empresas — e onde criei, por conta própria, a automação de rodízio de chamados e o painel de gestão que o time de suporte usa em produção. Como desenvolvedor, uno essa base de dados ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest), a Python para automação e processamento de mídia, e a agentes de IA construídos sobre APIs de LLM.",
         "Falo inglês fluente, prezo por código limpo e bem testado, e busco oportunidades remotas ou híbridas onde eu possa construir produtos confiáveis e seguir evoluindo.",
       ],
       highlights: [
@@ -57,7 +57,7 @@ export const dictionaries = {
       current: "atual",
       items: [
         {
-          role: "Consultor HCM",
+          role: "Suporte Técnico HCM",
           company: "Senior Norte PR — canal Senior Sistemas",
           period: "mar/2025 – atual",
           bullets: [
@@ -196,7 +196,7 @@ export const dictionaries = {
       title: "About me",
       paragraphs: [
         "I'm a Software Engineering graduate with over 4 years in tech — from technical support to enterprise systems consulting. That path taught me something you rarely learn from coding alone: to understand the business problem before writing the first line of code.",
-        "Today I work as an HCM Consultant at Senior Norte PR, a Senior Sistemas channel partner, dealing daily with advanced SQL, LSP rules, integrations and database maintenance for large companies — and where I built, on my own initiative, the ticket round-robin automation and the management dashboard the support team runs in production. As a developer, I pair that data foundation with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest), Python for automation and media processing, and AI agents built on LLM APIs.",
+        "Today I work in HCM Technical Support at Senior Norte PR, a Senior Sistemas channel partner, dealing daily with advanced SQL, LSP rules, integrations and database maintenance for large companies — and where I built, on my own initiative, the ticket round-robin automation and the management dashboard the support team runs in production. As a developer, I pair that data foundation with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest), Python for automation and media processing, and AI agents built on LLM APIs.",
         "I'm fluent in English, care about clean and well-tested code, and I'm looking for remote or hybrid opportunities where I can build reliable products and keep growing.",
       ],
       highlights: [
@@ -230,7 +230,7 @@ export const dictionaries = {
       current: "present",
       items: [
         {
-          role: "HCM Consultant",
+          role: "HCM Technical Support",
           company: "Senior Norte PR — Senior Sistemas channel partner",
           period: "Mar 2025 – present",
           bullets: [
