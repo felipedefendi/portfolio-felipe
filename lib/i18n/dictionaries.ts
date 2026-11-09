@@ -61,9 +61,9 @@ export const dictionaries = {
           company: "Senior Norte PR — canal Senior Sistemas",
           period: "mar/2025 – atual",
           bullets: [
-            "Manutenção de bancos de dados (Oracle, SQL Server, MySQL) de empresas clientes, aplicando SQL avançado, regras LSP e relatórios customizados para atender gestores e áreas de negócio.",
+            "Manutenção de bancos de dados (Oracle, SQL Server, MySQL) de empresas clientes com SQL avançado; manutenção de relatórios customizados, regras LSP e processos automáticos do Gestão de Pessoas HCM para gestores e áreas de negócio.",
             "Criei e mantenho em produção a automação de rodízio de chamados do SoftDesk e o Painel HCM da equipe (Node/TypeScript, React, API do Senior X, Teams via Power Automate), eliminando a distribuição manual de chamados.",
-            "Integrações entre sistemas via APIs REST e web services do Gestão de Pessoas HCM, com 10 certificações técnicas Pro em módulos HCM e GRS e trilha completa de LSP.",
+            "Suporte a sistemas de terceiros integrados ao HCM G5 e ao Senior X: teste e validação de web services (incluindo os do Atestado Digital) e diagnóstico de falhas de integração, com 10 certificações técnicas Pro em módulos HCM e GRS e trilha completa de LSP.",
             "Instalação e atualização de produtos Senior nos clientes (G5/G6, SGU, bancos de dados), preparação de estações de trabalho e diagnóstico básico de rede e conectividade.",
             "Tradução de requisitos de negócio em soluções técnicas, em contato direto com times e clientes, documentando procedimentos e automações.",
           ],
@@ -234,9 +234,9 @@ export const dictionaries = {
           company: "Senior Norte PR — Senior Sistemas channel partner",
           period: "Mar 2025 – present",
           bullets: [
-            "Maintenance of client databases (Oracle, SQL Server, MySQL) using advanced SQL, LSP rules and custom reports for managers and business areas.",
+            "Maintenance of client databases (Oracle, SQL Server, MySQL) using advanced SQL; maintenance of custom reports, LSP rules and automatic processes in Senior HCM for managers and business areas.",
             "Built and run in production the SoftDesk ticket round-robin automation and the team's HCM Dashboard (Node/TypeScript, React, Senior X API, Teams via Power Automate), removing manual ticket distribution.",
-            "System integrations through REST APIs and the HCM web services, with 10 Pro technical certifications across HCM and GRS modules and the full LSP track.",
+            "Support for third-party systems integrated with HCM G5 and Senior X: testing and validation of web services (including the Digital Medical Certificate ones) and troubleshooting of integration failures, with 10 Pro technical certifications across HCM and GRS modules and the full LSP track.",
             "Installation and upgrades of Senior products at client sites (G5/G6, SGU, databases), workstation setup and basic network and connectivity troubleshooting.",
             "Translated business requirements into technical solutions, working directly with teams and clients and documenting procedures and automations.",
           ],
