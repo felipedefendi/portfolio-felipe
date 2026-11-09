@@ -15,7 +15,7 @@ export const dictionaries = {
       name: "Felipe Defendi",
       role: "Desenvolvedor Full-Stack",
       tagline:
-        "Engenheiro de Software com base sólida em bancos de dados e sistemas corporativos. Transformo problemas de negócio em software confiável.",
+        "Engenheiro de Software com base sólida em bancos de dados e sistemas corporativos, e IA aplicada ao desenvolvimento e à automação: construo skills, agentes e pipelines que operam o trabalho de ponta a ponta. Transformo problemas de negócio em software confiável.",
       ctaProjects: "Ver projetos",
       ctaContact: "Entrar em contato",
     },
@@ -188,7 +188,7 @@ export const dictionaries = {
       name: "Felipe Defendi",
       role: "Full-Stack Developer",
       tagline:
-        "Software Engineer with a strong foundation in databases and enterprise systems. I turn business problems into reliable software.",
+        "Software Engineer with a strong foundation in databases and enterprise systems, and AI applied to development and automation: I build skills, agents and pipelines that run the work end to end. I turn business problems into reliable software.",
       ctaProjects: "View projects",
       ctaContact: "Get in touch",
     },
