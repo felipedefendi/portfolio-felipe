@@ -34,6 +34,7 @@ export const skillTiers: { id: SkillTierId; items: string[] }[] = [
       "FFmpeg",
       "OpenCV",
       "Whisper",
+      "Hyperframes (MCP)",
       "Playwright",
       "Power Automate",
       "Linux (systemd / nginx)",
