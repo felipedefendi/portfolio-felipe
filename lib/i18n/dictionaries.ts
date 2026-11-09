@@ -1,4 +1,4 @@
-export type Locale = "pt" | "en";
+﻿export type Locale = "pt" | "en";
 
 export const dictionaries = {
   pt: {
@@ -22,12 +22,12 @@ export const dictionaries = {
     about: {
       title: "Sobre mim",
       paragraphs: [
-        "Sou Engenheiro de Software formado, com mais de 4 anos atuando em tecnologia — do suporte técnico à consultoria em sistemas corporativos. Essa trajetória me deu algo que raramente se aprende só programando: entender o problema do negócio antes de escrever a primeira linha de código.",
+        "Sou Engenheiro de Software formado, com mais de 5 anos atuando em tecnologia — do suporte técnico à consultoria em sistemas corporativos. Essa trajetória me deu algo que raramente se aprende só programando: entender o problema do negócio antes de escrever a primeira linha de código.",
         "Hoje atuo no Suporte Técnico HCM da Senior Norte PR, canal da Senior Sistemas, onde lido diariamente com SQL avançado, regras LSP, integrações e manutenção de bancos de dados de grandes empresas — e onde criei, por conta própria, a automação de rodízio de chamados e o painel de gestão que o time de suporte usa em produção. Como desenvolvedor, uno essa base de dados ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest), a Python para automação e processamento de mídia, e a agentes de IA construídos sobre APIs de LLM.",
         "Falo inglês fluente, prezo por código limpo e bem testado, e busco oportunidades remotas ou híbridas onde eu possa construir produtos confiáveis e seguir evoluindo.",
       ],
       highlights: [
-        { value: "4+ anos", label: "em tecnologia" },
+        { value: "5+ anos", label: "em tecnologia" },
         { value: "Inglês", label: "avançado/fluente" },
         { value: "Eng. de Software", label: "bacharelado" },
         { value: "SQL", label: "bancos de produção" },
@@ -155,7 +155,7 @@ export const dictionaries = {
       backToSite: "Voltar ao site",
       summaryLabel: "Resumo profissional",
       summary:
-        "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 4 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos (ecossistema Senior: HCM, LSP, Senior X) ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest) e a Python para automação e processamento de mídia. Construo agentes de IA e ferramentas sobre APIs de LLM e Claude Code, do planejamento de arquitetura ao deploy em produção, com automações rodando 24/7 em uso real por equipes. Inglês fluente, foco em código limpo, testável e confiável.",
+        "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 5 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos (ecossistema Senior: HCM, LSP, Senior X) ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest) e a Python para automação e processamento de mídia. Construo agentes de IA e ferramentas sobre APIs de LLM e Claude Code, do planejamento de arquitetura ao deploy em produção, com automações rodando 24/7 em uso real por equipes. Inglês fluente, foco em código limpo, testável e confiável.",
       contactLabel: "Contato",
       projectsLabel: "Projetos",
     },
@@ -196,12 +196,12 @@ export const dictionaries = {
     about: {
       title: "About me",
       paragraphs: [
-        "I'm a Software Engineering graduate with over 4 years in tech — from technical support to enterprise systems consulting. That path taught me something you rarely learn from coding alone: to understand the business problem before writing the first line of code.",
+        "I'm a Software Engineering graduate with over 5 years in tech — from technical support to enterprise systems consulting. That path taught me something you rarely learn from coding alone: to understand the business problem before writing the first line of code.",
         "Today I work in HCM Technical Support at Senior Norte PR, a Senior Sistemas channel partner, dealing daily with advanced SQL, LSP rules, integrations and database maintenance for large companies — and where I built, on my own initiative, the ticket round-robin automation and the management dashboard the support team runs in production. As a developer, I pair that data foundation with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest), Python for automation and media processing, and AI agents built on LLM APIs.",
         "I'm fluent in English, care about clean and well-tested code, and I'm looking for remote or hybrid opportunities where I can build reliable products and keep growing.",
       ],
       highlights: [
-        { value: "4+ years", label: "in tech" },
+        { value: "5+ years", label: "in tech" },
         { value: "English", label: "advanced/fluent" },
         { value: "Software Eng.", label: "bachelor's degree" },
         { value: "SQL", label: "production databases" },
@@ -329,7 +329,7 @@ export const dictionaries = {
       backToSite: "Back to site",
       summaryLabel: "Professional summary",
       summary:
-        "Full-Stack Developer and Software Engineer with 4+ years in tech, combining a strong foundation in databases and enterprise systems (Senior ecosystem: HCM, LSP, Senior X) with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest) and Python for automation and media processing. I build AI agents and tooling on top of LLM APIs and Claude Code, from architecture planning to production deployment, with automations running 24/7 in real use by teams. Fluent in English, focused on clean, testable and reliable code.",
+        "Full-Stack Developer and Software Engineer with 5+ years in tech, combining a strong foundation in databases and enterprise systems (Senior ecosystem: HCM, LSP, Senior X) with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest) and Python for automation and media processing. I build AI agents and tooling on top of LLM APIs and Claude Code, from architecture planning to production deployment, with automations running 24/7 in real use by teams. Fluent in English, focused on clean, testable and reliable code.",
       contactLabel: "Contact",
       projectsLabel: "Projects",
     },
