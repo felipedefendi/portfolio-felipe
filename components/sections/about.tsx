@@ -16,14 +16,14 @@ export function About() {
             </p>
           ))}
         </div>
-        <ul className="grid grid-cols-2 gap-4 md:grid-cols-1">
+        <ul className="grid grid-cols-2 gap-3 content-start">
           {t.about.highlights.map((h) => (
             <li
               key={h.label}
               className="rounded-xl border border-border bg-card p-4"
             >
-              <p className="text-lg font-bold text-foreground">{h.value}</p>
-              <p className="text-sm text-muted-foreground">{h.label}</p>
+              <p className="text-base font-bold leading-tight text-foreground">{h.value}</p>
+              <p className="mt-1 text-xs text-muted-foreground">{h.label}</p>
             </li>
           ))}
         </ul>
