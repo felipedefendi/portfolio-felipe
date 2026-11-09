@@ -94,6 +94,7 @@ export const projects: Project[] = [
     slug: "jukedigital",
     status: "in-progress",
     tags: ["Cloudflare Workers", "Hono", "Durable Objects", "D1", "KV", "R2", "React", "Tailwind", "Spotify API", "Mercado Pago", "Turborepo"],
+    repoUrl: "https://github.com/felipedefendi/jukedigital",
     content: {
       pt: {
         title: "JukeDigital",
