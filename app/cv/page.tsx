@@ -146,6 +146,12 @@ export default function CvPage() {
               <p className="text-sm text-muted-foreground">
                 {t.education.school} · {t.education.period}
               </p>
+              <p className="mt-3 text-sm font-semibold text-foreground">
+                {t.education.certificationsLabel}
+              </p>
+              <p className="text-xs text-muted-foreground">
+                {t.education.certificationItems.join(" · ")}
+              </p>
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground">

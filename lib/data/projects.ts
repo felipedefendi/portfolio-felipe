@@ -109,20 +109,69 @@ export const projects: Project[] = [
   {
     slug: "softdesk-hcm-bot",
     status: "live",
-    tags: ["Node.js", "TypeScript", "Playwright", "Express", "Systemd", "Nginx", "Oracle Cloud"],
+    tags: [
+      "Node.js",
+      "TypeScript",
+      "React",
+      "Vite",
+      "Express",
+      "Playwright",
+      "API Senior X",
+      "GitHub Actions",
+      "Nginx",
+      "Oracle Cloud",
+    ],
     repoUrl: "https://github.com/felipedefendi/softdesk-hcm-bot",
     content: {
       pt: {
-        title: "SoftDesk HCM Bot",
-        tagline: "Automação de rodízio de chamados de suporte com monitoramento de SLA.",
+        title: "SoftDesk HCM Bot + Painel HCM",
+        tagline: "Automação de rodízio de chamados com painel de gestão da equipe de suporte.",
         description:
-          "Automação que monitora a fila de chamados sem atendente de um sistema de suporte e, quando o SLA de encaminhamento é ultrapassado, atribui automaticamente ao próximo atendente de uma equipe em rodízio, notificando o time via Microsoft Teams. Inclui um dashboard web para gerenciar quem está ativo no rodízio. Implantado em produção numa VM na Oracle Cloud, com systemd, nginx e HTTPS.",
+          "Automação em produção 24/7 que monitora a fila de chamados sem atendente do SoftDesk (sistema de chamados da Senior) e, quando o SLA de encaminhamento estoura, atribui ao próximo atendente do rodízio e notifica o time no Microsoft Teams via Power Automate. O Painel HCM (React + Vite) traz oito telas: fila ao vivo com SLA regressivo, saúde do bot, histórico, rodízio reordenável, cofre de credenciais cifradas (AES-256-GCM), auditoria e gestão de usuários, com login individual autenticado na API do Senior X Platform e relatórios diário/semanal/mensal no Teams. Integração por engenharia reversa da API interna do SoftDesk; deploy contínuo com GitHub Actions numa VM Oracle Cloud (systemd, nginx, HTTPS).",
       },
       en: {
-        title: "SoftDesk HCM Bot",
-        tagline: "Support ticket round-robin automation with SLA monitoring.",
+        title: "SoftDesk HCM Bot + HCM Dashboard",
+        tagline: "Ticket round-robin automation with a management dashboard for the support team.",
         description:
-          "An automation that monitors an unassigned-ticket queue in a support system and, once the routing SLA is exceeded, automatically assigns the ticket to the next agent in a team rotation, notifying the team via Microsoft Teams. Includes a web dashboard to manage who's active in the rotation. Deployed to production on an Oracle Cloud VM with systemd, nginx and HTTPS.",
+          "A 24/7 production automation that monitors the unassigned-ticket queue of SoftDesk (Senior's ticketing system) and, once the routing SLA is exceeded, assigns the ticket to the next agent in rotation and notifies the team on Microsoft Teams via Power Automate. The HCM Dashboard (React + Vite) has eight screens: live queue with SLA countdown, bot health, history, reorderable rotation, encrypted credential vault (AES-256-GCM), audit log and user management, with per-user login authenticated against the Senior X Platform API and daily/weekly/monthly reports on Teams. Integration built by reverse-engineering SoftDesk's internal API; continuous deployment with GitHub Actions to an Oracle Cloud VM (systemd, nginx, HTTPS).",
+      },
+    },
+  },
+  {
+    slug: "motor-edicao-video",
+    status: "live",
+    tags: ["Python", "FFmpeg", "OpenCV", "Whisper", "PyTorch", "Pillow", "Claude Code", "Agentes de IA"],
+    content: {
+      pt: {
+        title: "Motor de Edição de Vídeo Automatizada",
+        tagline: "Pipeline em Python que monta, substitui e audita vídeos a partir de um job em JSON.",
+        description:
+          "Conjunto de scripts Python 3.12 orientados a jobs (configuração em JSON) que transcrevem o áudio com Whisper (PyTorch/CUDA), alinham o roteiro palavra a palavra, geram tipografia cinética em legendas ASS com medição de fonte via Pillow calibrada contra o libass e renderizam com FFmpeg usando filtros compostos, concatenação sem perdas e processamento paralelo. Inclui visão computacional com OpenCV (rastreamento ORB/RANSAC, inpainting, máscaras HSV, compositing com sombra), separação de voz com Demucs, substituição de falas alinhada por difflib, banco de efeitos sonoros com corte por transiente, detector de lip-sync quebrado e auditoria automática do render por comparação de histogramas. Empacotado como skill de agente para Claude Code, Codex e Custom GPT, com documentação para operação por IA.",
+      },
+      en: {
+        title: "Automated Video Editing Engine",
+        tagline: "A Python pipeline that assembles, replaces and audits videos from a JSON job file.",
+        description:
+          "A set of job-driven Python 3.12 scripts (JSON config) that transcribe audio with Whisper (PyTorch/CUDA), align the script word by word, generate kinetic typography as ASS subtitles with Pillow font metrics calibrated against libass, and render with FFmpeg using complex filter graphs, lossless concatenation and parallel processing. Includes computer vision with OpenCV (ORB/RANSAC tracking, inpainting, HSV masks, shadow compositing), vocal separation with Demucs, difflib-aligned speech replacement, a transient-cut sound effects bank, a broken lip-sync detector and automatic render auditing via histogram comparison. Packaged as an agent skill for Claude Code, Codex and Custom GPT, with documentation for AI-driven operation.",
+      },
+    },
+  },
+  {
+    slug: "jukedigital",
+    status: "in-progress",
+    tags: ["Cloudflare Workers", "Hono", "Durable Objects", "D1", "React", "Tailwind", "Spotify API", "Turborepo"],
+    content: {
+      pt: {
+        title: "JukeDigital",
+        tagline: "Jukebox digital para bares e restaurantes, com fila controlada pelo estabelecimento.",
+        description:
+          "Clientes escolhem músicas pelo celular via QR Code na mesa, o estabelecimento modera a fila e a reprodução toca num painel web ligado ao som do local. Monorepo (pnpm + Turborepo) com API em Cloudflare Workers (Hono) usando Durable Objects para o estado de cada sala, D1, KV e R2, frontend React + Vite + Tailwind, schemas Zod compartilhados e integração com a API e o Web Playback SDK do Spotify.",
+      },
+      en: {
+        title: "JukeDigital",
+        tagline: "A digital jukebox for bars and restaurants, with a venue-controlled queue.",
+        description:
+          "Customers pick songs from their phones via a QR code on the table, the venue moderates the queue and playback runs on a web player connected to the venue's sound system. Monorepo (pnpm + Turborepo) with a Cloudflare Workers API (Hono) using Durable Objects for per-room state, D1, KV and R2, a React + Vite + Tailwind frontend, shared Zod schemas and integration with the Spotify API and Web Playback SDK.",
       },
     },
   },

@@ -23,7 +23,7 @@ export const dictionaries = {
       title: "Sobre mim",
       paragraphs: [
         "Sou Engenheiro de Software formado, com mais de 4 anos atuando em tecnologia — do suporte técnico à consultoria em sistemas corporativos. Essa trajetória me deu algo que raramente se aprende só programando: entender o problema do negócio antes de escrever a primeira linha de código.",
-        "Hoje atuo como Consultor HCM na Senior Sistemas, onde lido diariamente com SQL avançado, automações e manutenção de bancos de dados de grandes empresas. Como desenvolvedor full-stack, uno essa base sólida de dados ao ecossistema moderno de JavaScript e TypeScript — React, Next.js, Node e Nest.",
+        "Hoje atuo como Consultor HCM na Senior Norte PR, canal da Senior Sistemas, onde lido diariamente com SQL avançado, regras LSP, integrações e manutenção de bancos de dados de grandes empresas — e onde criei, por conta própria, a automação de rodízio de chamados e o painel de gestão que o time de suporte usa em produção. Como desenvolvedor, uno essa base de dados ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest), a Python para automação e processamento de mídia, e a agentes de IA construídos sobre APIs de LLM.",
         "Falo inglês fluente, prezo por código limpo e bem testado, e busco oportunidades remotas ou híbridas onde eu possa construir produtos confiáveis e seguir evoluindo.",
       ],
       highlights: [
@@ -58,12 +58,14 @@ export const dictionaries = {
       items: [
         {
           role: "Consultor HCM",
-          company: "Senior Sistemas — Unidade Norte do Paraná",
+          company: "Senior Norte PR — canal Senior Sistemas",
           period: "mar/2025 – atual",
           bullets: [
-            "Manutenção e automação de bancos de dados (Oracle, SQL Server, MySQL) de empresas clientes, aplicando SQL avançado e regras de negócio customizadas.",
-            "Resolução de bugs e incidentes em módulos do sistema HCM, com certificações em diversos módulos e nas linguagens internas da Senior.",
-            "Tradução de requisitos de negócio em soluções técnicas, em contato direto com times e clientes.",
+            "Manutenção e automação de bancos de dados (Oracle, SQL Server, MySQL) de empresas clientes, aplicando SQL avançado, regras LSP e relatórios customizados para atender gestores e áreas de negócio.",
+            "Criei e mantenho em produção a automação de rodízio de chamados do SoftDesk e o Painel HCM da equipe (Node/TypeScript, React, API do Senior X, Teams via Power Automate), eliminando a distribuição manual de chamados.",
+            "Integrações entre sistemas via APIs REST e web services do Gestão de Pessoas HCM, com 11 certificações técnicas Pro em módulos HCM e GRS e trilha completa de LSP.",
+            "Instalação e atualização de produtos Senior nos clientes (G5/G6, SGU, bancos de dados), preparação de estações de trabalho e diagnóstico básico de rede e conectividade.",
+            "Tradução de requisitos de negócio em soluções técnicas, em contato direto com times e clientes, documentando procedimentos e automações.",
           ],
         },
         {
@@ -90,6 +92,7 @@ export const dictionaries = {
       viewLive: "Ver online",
       viewCode: "Código",
       comingSoon: "Em breve",
+      privateUse: "Uso interno / código privado",
     },
     education: {
       title: "Formação & Idiomas",
@@ -97,9 +100,25 @@ export const dictionaries = {
       degree: "Bacharelado em Engenharia de Software",
       school: "UniCesumar",
       period: "2021 – 2024",
-      certificationsLabel: "Certificações",
+      certificationsLabel: "Certificações Senior",
       certifications:
-        "Certificações em múltiplos módulos e nas linguagens internas da Senior Sistemas.",
+        "11 certificações técnicas Pro (Universidade Corporativa Senior) e trilha completa de LSP.",
+      certificationItems: [
+        "HCM Administração de Pessoal",
+        "HCM Controle de Ponto",
+        "HCM Gestão do Ponto",
+        "HCM Benefícios",
+        "HCM Gestão de Remuneração",
+        "HCM Recrutamento e Seleção",
+        "HCM Segurança do Trabalho",
+        "HCM Medicina Ocupacional",
+        "GRS X Controle de Terminais de Ponto",
+        "GRS XT Integrações",
+        "Senior Certified Talent Operation — Dpto. Pessoal",
+        "LSP Básico, Intermediário e Avançado",
+        "Gerador de Relatórios · CBDS · SGU",
+        "Integração HCM com sistemas de terceiros (web services)",
+      ],
       languagesLabel: "Idiomas",
       languages: [
         { name: "Português", level: "Nativo" },
@@ -135,7 +154,7 @@ export const dictionaries = {
       backToSite: "Voltar ao site",
       summaryLabel: "Resumo profissional",
       summary:
-        "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 4 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos ao ecossistema moderno JavaScript/TypeScript (React, Next.js, Node, Nest). Experiência prática em desenvolvimento full-stack assistido por IA — principalmente com Claude Code —, conduzindo planejamento de arquitetura, backend, banco de dados, testes automatizados e deploy em produção de múltiplos projetos. Inglês fluente, foco em código limpo, testável e confiável.",
+        "Desenvolvedor Full-Stack e Engenheiro de Software com mais de 4 anos em tecnologia, unindo forte base em bancos de dados e sistemas corporativos (ecossistema Senior: HCM, LSP, Senior X) ao ecossistema JavaScript/TypeScript (React, Next.js, Node, Nest) e a Python para automação e processamento de mídia. Construo agentes de IA e ferramentas sobre APIs de LLM e Claude Code, do planejamento de arquitetura ao deploy em produção, com automações rodando 24/7 em uso real por equipes. Inglês fluente, foco em código limpo, testável e confiável.",
       contactLabel: "Contato",
       projectsLabel: "Projetos",
     },
@@ -177,7 +196,7 @@ export const dictionaries = {
       title: "About me",
       paragraphs: [
         "I'm a Software Engineering graduate with over 4 years in tech — from technical support to enterprise systems consulting. That path taught me something you rarely learn from coding alone: to understand the business problem before writing the first line of code.",
-        "Today I work as an HCM Consultant at Senior Sistemas, dealing daily with advanced SQL, automation and database maintenance for large companies. As a full-stack developer, I pair that solid data foundation with the modern JavaScript and TypeScript ecosystem — React, Next.js, Node and Nest.",
+        "Today I work as an HCM Consultant at Senior Norte PR, a Senior Sistemas channel partner, dealing daily with advanced SQL, LSP rules, integrations and database maintenance for large companies — and where I built, on my own initiative, the ticket round-robin automation and the management dashboard the support team runs in production. As a developer, I pair that data foundation with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest), Python for automation and media processing, and AI agents built on LLM APIs.",
         "I'm fluent in English, care about clean and well-tested code, and I'm looking for remote or hybrid opportunities where I can build reliable products and keep growing.",
       ],
       highlights: [
@@ -212,12 +231,14 @@ export const dictionaries = {
       items: [
         {
           role: "HCM Consultant",
-          company: "Senior Sistemas — North Paraná Unit",
+          company: "Senior Norte PR — Senior Sistemas channel partner",
           period: "Mar 2025 – present",
           bullets: [
-            "Maintenance and automation of client databases (Oracle, SQL Server, MySQL) using advanced SQL and custom business rules.",
-            "Resolved bugs and incidents across HCM modules, holding certifications in several modules and Senior's internal languages.",
-            "Translated business requirements into technical solutions, working directly with teams and clients.",
+            "Maintenance and automation of client databases (Oracle, SQL Server, MySQL) using advanced SQL, LSP rules and custom reports for managers and business areas.",
+            "Built and run in production the SoftDesk ticket round-robin automation and the team's HCM Dashboard (Node/TypeScript, React, Senior X API, Teams via Power Automate), removing manual ticket distribution.",
+            "System integrations through REST APIs and the HCM web services, with 11 Pro technical certifications across HCM and GRS modules and the full LSP track.",
+            "Installation and upgrades of Senior products at client sites (G5/G6, SGU, databases), workstation setup and basic network and connectivity troubleshooting.",
+            "Translated business requirements into technical solutions, working directly with teams and clients and documenting procedures and automations.",
           ],
         },
         {
@@ -244,6 +265,7 @@ export const dictionaries = {
       viewLive: "View live",
       viewCode: "Code",
       comingSoon: "Coming soon",
+      privateUse: "Internal use / private code",
     },
     education: {
       title: "Education & Languages",
@@ -251,9 +273,25 @@ export const dictionaries = {
       degree: "Bachelor's in Software Engineering",
       school: "UniCesumar",
       period: "2021 – 2024",
-      certificationsLabel: "Certifications",
+      certificationsLabel: "Senior Certifications",
       certifications:
-        "Certifications in multiple modules and Senior Sistemas' internal languages.",
+        "11 Pro technical certifications (Senior Corporate University) and the full LSP track.",
+      certificationItems: [
+        "HCM Personnel Administration",
+        "HCM Time & Attendance Control",
+        "HCM Time Management",
+        "HCM Benefits",
+        "HCM Compensation Management",
+        "HCM Recruitment & Selection",
+        "HCM Occupational Safety",
+        "HCM Occupational Health",
+        "GRS X Time Clock Terminal Control",
+        "GRS XT Integrations",
+        "Senior Certified Talent Operation — Personnel Dept.",
+        "LSP Basic, Intermediate and Advanced",
+        "Report Generator · CBDS · SGU",
+        "HCM integration with third-party systems (web services)",
+      ],
       languagesLabel: "Languages",
       languages: [
         { name: "Portuguese", level: "Native" },
@@ -289,7 +327,7 @@ export const dictionaries = {
       backToSite: "Back to site",
       summaryLabel: "Professional summary",
       summary:
-        "Full-Stack Developer and Software Engineer with 4+ years in tech, combining a strong foundation in databases and enterprise systems with the modern JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest). Hands-on experience with AI-assisted full-stack development — primarily with Claude Code — leading architecture planning, backend, database design, automated testing and production deployment across multiple projects. Fluent in English, focused on clean, testable and reliable code.",
+        "Full-Stack Developer and Software Engineer with 4+ years in tech, combining a strong foundation in databases and enterprise systems (Senior ecosystem: HCM, LSP, Senior X) with the JavaScript/TypeScript ecosystem (React, Next.js, Node, Nest) and Python for automation and media processing. I build AI agents and tooling on top of LLM APIs and Claude Code, from architecture planning to production deployment, with automations running 24/7 in real use by teams. Fluent in English, focused on clean, testable and reliable code.",
       contactLabel: "Contact",
       projectsLabel: "Projects",
     },

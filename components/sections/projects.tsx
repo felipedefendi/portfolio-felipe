@@ -87,7 +87,7 @@ export function Projects() {
                 ))}
                 {!project.liveUrl && !project.repoUrl && !project.repos?.length ? (
                   <span className="text-xs text-muted-foreground">
-                    {t.projects.comingSoon}
+                    {project.status === "live" ? t.projects.privateUse : t.projects.comingSoon}
                   </span>
                 ) : null}
               </div>

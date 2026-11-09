@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, Languages } from "lucide-react";
+import { Award, GraduationCap, Languages } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { Section } from "@/components/section";
 
@@ -22,6 +22,26 @@ export function Education() {
           <p className="text-sm text-muted-foreground">
             {e.school} · {e.period}
           </p>
+        </div>
+
+        <div className="rounded-xl border border-border bg-card p-6 md:row-span-2">
+          <div className="mb-4 flex items-center gap-2 text-accent">
+            <Award className="h-5 w-5" />
+            <h3 className="font-semibold text-foreground">
+              {e.certificationsLabel}
+            </h3>
+          </div>
+          <p className="mb-3 text-sm text-muted-foreground">{e.certifications}</p>
+          <ul className="flex flex-wrap gap-1.5">
+            {e.certificationItems.map((item) => (
+              <li
+                key={item}
+                className="rounded-md border border-border bg-muted px-2 py-0.5 text-xs text-muted-foreground"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="rounded-xl border border-border bg-card p-6">
