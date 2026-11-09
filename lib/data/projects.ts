@@ -160,19 +160,19 @@ export const projects: Project[] = [
   {
     slug: "jukedigital",
     status: "in-progress",
-    tags: ["Cloudflare Workers", "Hono", "Durable Objects", "D1", "React", "Tailwind", "Spotify API", "Turborepo"],
+    tags: ["Cloudflare Workers", "Hono", "Durable Objects", "D1", "KV", "R2", "React", "Tailwind", "Spotify API", "Mercado Pago", "Turborepo"],
     content: {
       pt: {
         title: "JukeDigital",
-        tagline: "Jukebox digital para bares e restaurantes, com fila controlada pelo estabelecimento.",
+        tagline: "Jukebox digital para bares e restaurantes, 100% serverless na Cloudflare.",
         description:
-          "Clientes escolhem músicas pelo celular via QR Code na mesa, o estabelecimento modera a fila e a reprodução toca num painel web ligado ao som do local. Monorepo (pnpm + Turborepo) com API em Cloudflare Workers (Hono) usando Durable Objects para o estado de cada sala, D1, KV e R2, frontend React + Vite + Tailwind, schemas Zod compartilhados e integração com a API e o Web Playback SDK do Spotify.",
+          "Clientes pedem músicas pelo celular via QR Code na mesa, o estabelecimento modera a fila e a reprodução segue sozinha. Monorepo (pnpm + Turborepo) com quatro apps: API em Cloudflare Workers (Hono), app web React + Vite + Tailwind, painel super-admin isolado atrás do Cloudflare Access e landing estática sem JavaScript. Um Durable Object por estabelecimento coordena o WebSocket em tempo real e avança a fila por alarme conferindo o estado no Spotify, então a música continua sem nenhuma tela aberta. D1 com réplicas de leitura, KV para cache e limite de requisições, R2 para logos e banners. Consumo da Web API e do Web Playback SDK do Spotify com OAuth por estabelecimento e refresh token cifrado (AES-GCM com chave derivada por HKDF), Last.fm para gêneros e faixas similares, login do cliente por link mágico e código por e-mail (Resend), Web Push, Pix fura-fila via Mercado Pago com webhook, auditoria, histórico exportável e rotina diária de limpeza via cron.",
       },
       en: {
         title: "JukeDigital",
-        tagline: "A digital jukebox for bars and restaurants, with a venue-controlled queue.",
+        tagline: "A digital jukebox for bars and restaurants, fully serverless on Cloudflare.",
         description:
-          "Customers pick songs from their phones via a QR code on the table, the venue moderates the queue and playback runs on a web player connected to the venue's sound system. Monorepo (pnpm + Turborepo) with a Cloudflare Workers API (Hono) using Durable Objects for per-room state, D1, KV and R2, a React + Vite + Tailwind frontend, shared Zod schemas and integration with the Spotify API and Web Playback SDK.",
+          "Customers request songs from their phones via a QR code on the table, the venue moderates the queue and playback runs on its own. Monorepo (pnpm + Turborepo) with four apps: a Cloudflare Workers API (Hono), a React + Vite + Tailwind web app, an isolated super-admin panel behind Cloudflare Access and a static zero-JavaScript landing page. One Durable Object per venue coordinates the real-time WebSocket and advances the queue on alarms by checking playback state on Spotify, so music keeps playing with no screen open. D1 with read replicas, KV for caching and rate limiting, R2 for logos and banners. Spotify Web API and Web Playback SDK with per-venue OAuth and an encrypted refresh token (AES-GCM with an HKDF-derived key), Last.fm for genres and similar tracks, customer login by magic link and e-mail code (Resend), Web Push, Pix skip-the-line payments through Mercado Pago with webhooks, audit log, exportable history and a daily housekeeping cron.",
       },
     },
   },
