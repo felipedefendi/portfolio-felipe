@@ -122,6 +122,7 @@ export const projects: Project[] = [
       "Oracle Cloud",
     ],
     repoUrl: "https://github.com/felipedefendi/softdesk-hcm-bot",
+    liveUrl: "https://painelhcm.duckdns.org",
     content: {
       pt: {
         title: "SoftDesk HCM Bot + Painel HCM",
